@@ -16,15 +16,20 @@ body {
 #generaBtn {
     font-family: Roboto Condensed;
     padding: 15px 25px;
-    font-size: 16px;
+    font-size: 4vw; /*font size responsive: 4% della larghezza della finestra*/
     cursor: pointer;
     font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #444;
 }
 
 #numeroGenerato {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 5vw;
     font-weight: bold;
+    color: #444;
 }
 
 /*stile dark mode: */
@@ -33,7 +38,7 @@ body {
     bottom: 20px;
     right:20px;
     padding: 10px 15px;
-    font-size: 16px;
+    font-size: 3vw;
     cursor: pointer;
 
 }
@@ -47,6 +52,10 @@ body.dark-mode {
 body.dark-mode #generaBtn {
     background-color: #444;
     color: #fff;
+}
+
+body.dark-mode #numeroGenerato{
+    color: #fff
 }
 
 body.dark-mode .dark-mode-toggle{

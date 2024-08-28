@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: Roboto Condensed;
     background-color: #f0f0f0;
+    transition: background-color 0.3s, color 0.3s; /*aggiunta transizione per dark mode*/;
 }
 
 .container {
@@ -24,4 +25,31 @@ body {
     margin-top: 20px;
     font-size: 24px;
     font-weight: bold;
+}
+
+/*stile dark mode: */
+.dark-mode-toggle{
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+/* stili per la darkmode*/
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode #generaBtn {
+    background-color: #444;
+    color: #fff;
+}
+
+body.dark-mode .dark-mode-toggle{
+    background-color: #444;
+    color: #fff;
 }
